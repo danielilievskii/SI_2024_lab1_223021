@@ -1,0 +1,111 @@
+4. 
+mkdir SI_2024_lab1_223021 - креирање директориум
+git init - иницијализирање git во директориум
+
+5. git remote add origin https://github.com/danielilievskii/SI_2024_lab1_223021.git
+- поврзување на локалниот директориум со оддалечениот со додавање remote со име origin
+
+6.
+touch README.md 
+- креирање на фајл
+
+git add .
+- Ги става сите untracked/modified фајлови на stage
+
+git commit -m "Initial commit"
+- Комитнување на сите staged фајлови со одредена порака
+
+7.
+git add .
+git commit -m "Add started code"
+- Иста дефиниција како претходното прашање за новите 3 симнати фајлови.
+
+8. 
+git branch -M master
+- преименување на актуелната локална гранка од main во master
+git push origin master
+- праќање на сите commit-и на remote-от origin од гранката master (синхронизирање со оддалечениот репозиториум)
+
+
+9. 
+git branch bug1
+git branch bug2
+- креирање на 2 гранки од гранката master со соодветни имиња
+
+10.
+git checkout bug1
+- префрлување на гранката bug1
+
+11. git commit -a -m "Fix wrong condition in filterOddLengthStrings"
+- ставање на изменетиот фајл SILab1_1.java на stage и негово комитнување со соодветна порака на гранката bug1
+
+12.
+git checkout bug2
+- префрлување на гранката bug2
+
+13. 
+git commit -a -m "Fix wrong condition in makeBigStringForm"
+- ставање на изменетиот фајл SILab1_2.java на stage и негово комитнување со соодветна порака на гранката bug2
+
+14.
+git checkout bug1
+- префрлување на гранката bug1
+
+15. git commit -a -m "Call method filterOddLengthStrings in main class"
+- ставање на изменетиот фајл SILab1Main.java на stage и негово комитнување со соодветна порака на гранката bug1
+
+16. git checkout bug2
+- префрлување на гранката bug2
+
+17. git commit -a -m "Call method makeBigStringFrom in main class"
+- ставање на изменетиот фајл SILabMain.java на stage и негово комитнување со соодветна порака на гранката bug2
+
+18.
+git push origin bug2
+git checkout bug1
+git push origin bug1
+- праќање на сите commit-и на remote-от origin од гранките bug1 и bug2 (синхронизирање со оддалечениот репозиториум)
+
+19. git checkout master
+- префрлување на гранката master
+
+20. git merge bug1
+- спојување на гранката bug1 кон гранката master, без конфликти со fast-forward стратегија
+
+21. git push origin -all
+- праќање на сите commit-и на remote-от origin од сите гранки (синхронизирање со оддалечениот репозиториум)
+
+22. git checkout bug2
+- префрлување на гранката bug2
+
+23.
+git rebase master
+- правење rebase на гранката bug2 спрема гранката master и случување на конфликт во SILab1Main.java (различен код на иста линија на двете гранки во ист фајл).
+
+git add SILab1Main.java
+- по справување со конфликтот, додавање на изменетиот фајл на stage
+
+git rebase --continue
+- продолжување на процесот на rebase по решавање на конфликтите
+
+24. git checkout master
+- префрлување на гранката master
+
+25. git merge bug2
+- спојување на гранката bug2 кон гранката master, без конфликти со fast-forward стратегија
+
+26. git push origin --all
+- праќање на сите commit-и на remote-от origin од сите гранки (синхронизирање со оддалечениот репозиториум)
+
+27. git push origin bug2 --force
+- праќање со сила на commit-ите на remote-от origin од гранката bug2, така што ќе се overwrite-нат конфликтите кои се појауваат на оддалечената гранка.
+
+28.
+git add .
+- Ги става сите untracked/modified фајлови на stage
+
+git commit -m "Final commit"
+- Комитнување на сите staged фајлови со одредена порака
+
+29. git push origin -all
+- праќање на сите commit-и на remote-от origin од сите гранки (синхронизирање со оддалечениот репозиториум)

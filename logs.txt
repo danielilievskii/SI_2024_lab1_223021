@@ -1,0 +1,35 @@
+commit 77343cb887cfc7fb687bece68e1d28546c0450f2 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: danielilievskii <dilievski54@gmail.com>
+Date:   Sat Mar 23 15:42:15 2024 +0100
+
+    Call method makeBigStringFrom in main class
+
+commit 8ea1a3b911bc5b34f740bb0c9678b035780c6207
+Author: danielilievskii <dilievski54@gmail.com>
+Date:   Sat Mar 23 15:33:51 2024 +0100
+
+    Fix wrong condition in makeBigStringForm
+
+commit 11dcb5bacddcb92399c7a74e835212118a841016 (origin/bug1, bug1)
+Author: danielilievskii <dilievski54@gmail.com>
+Date:   Sat Mar 23 15:38:52 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit e31b29fa6a6a5c769d8cd408e426d071a465d13b
+Author: danielilievskii <dilievski54@gmail.com>
+Date:   Sat Mar 23 15:28:35 2024 +0100
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 46aef30bcdc5c06dbe1f331bae08023187d61c61
+Author: danielilievskii <dilievski54@gmail.com>
+Date:   Sat Mar 23 14:26:06 2024 +0100
+
+    Add starter code
+
+commit 761cb6405ad69688b31e06c16bf6ec7820e282ca
+Author: danielilievskii <dilievski54@gmail.com>
+Date:   Sat Mar 23 14:20:24 2024 +0100
+
+    Initial commit
